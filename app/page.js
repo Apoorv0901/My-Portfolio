@@ -124,28 +124,24 @@ export default function Home() {
             {/* Testimonial 2 */}
             <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
               <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
-                <p className="text-gray-800 dark:text-gray-200">"Curious about my perspective? Head to my blog page to read my blogs."</p>
-                <h3 className="mt-4 text-xl font-semibold text-gray-800 dark:text-gray-200"></h3>
-                <Link href={"/blog"}>
-                <Button className="mx-1" variant="outline">Blog</Button>
-                </Link>
-              </div>
-            </div>
-            {/* Testimonial 3 */}
-            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
                 <p className="text-gray-800 dark:text-gray-200">"Dive into my portfolio! Visit my Projects page to understand my technical capabilities and project experience."</p>
                 <h3 className="mt-4 text-xl font-semibold text-gray-800 dark:text-gray-200"></h3>
                 <Link href={"/projects"}>
                 <Button className="mx-1" variant="outline">Projects</Button>
                 </Link>
               </div>
-            </div >
-            <div className="sm:flex-col sm:justify-center md:flex-col md:justify-center">
-            <Link href={"/contact"}>
+            </div>
+            {/* Testimonial 3 */}
+            <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+              <div className="p-6 bg-white rounded-lg shadow-lg dark:bg-gray-800 transform transition duration-500 hover:scale-105 text-center">
+                <p className="text-gray-800 dark:text-gray-200">
+                "Want to connect or discuss a project? Here's how you can reach me"</p>
+                <h3 className="mt-4 text-xl font-semibold text-gray-800 dark:text-gray-200"></h3>
+                <Link href={"/contact"}>
                 <Button className="mx-1" variant="outline">Contact Me</Button>
                 </Link>
-            </div>
+              </div>
+            </div >
           </div>
           
         </div>

@@ -24,46 +24,44 @@ const Navbar = () => {
     const pathname = usePathname()
 
     useEffect(() => {
-      setProgress(20)
+        setProgress(20)
 
-      setTimeout(() => {
-        setProgress(40)
-      }, 100);
+        setTimeout(() => {
+            setProgress(40)
+        }, 100);
 
-      setTimeout(() => {
-        setProgress(100)
-      }, 400);
-     
+        setTimeout(() => {
+            setProgress(100)
+        }, 400);
+
     }, [pathname])
 
 
 
     useEffect(() => {
-      setTimeout(() => {
-       setProgress(0)
-      }, 50);
+        setTimeout(() => {
+            setProgress(0)
+        }, 50);
     }, [])
-    
-    
+
+
     return (
         <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur border-b z-10">
             <LoadingBar
-        color='#933ce6'
-        progress={progress}
-        onLoaderFinished={() => setProgress(0)}
-      />
+                color='#933ce6'
+                progress={progress}
+                onLoaderFinished={() => setProgress(0)}
+            />
             <div className="container mx-auto flex justify-between items-center">
                 <Link href={"/"}><div className="text-xl font-bold">
                     Hi, I'm Apoorv Sharma
                 </div></Link>
                 <div className="hidden md:flex space-x-4 items-center">
-                    <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300"> Home
+                    <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
+                        Home
                     </Link>
                     <Link href="/about" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
                         About
-                    </Link>
-                    <Link href="/blog" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
-                        Blog
                     </Link>
                     <Link href="/projects" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
                         Projects
@@ -79,9 +77,9 @@ const Navbar = () => {
                 </div>
 
                 <div className="md:hidden">
-                        <span className="mx-2"> 
-                            <ModeToggle />
-                        </span>
+                    <span className="mx-2">
+                        <ModeToggle />
+                    </span>
                     <Sheet>
                         <SheetTrigger>
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -98,14 +96,11 @@ const Navbar = () => {
                                         <Link href="/about">
                                             About
                                         </Link>
-                                        <Link href="/blog">
-                                            Blog
+                                        <Link href="/projects">
+                                            Projects
                                         </Link>
                                         <Link href="/contact">
                                             Contact
-                                        </Link>
-                                        <Link href="/projects">
-                                            Projects
                                         </Link>
                                         <div>
                                             {/* <Button className="mx-1 text-xs" variant="outline">Login</Button>
