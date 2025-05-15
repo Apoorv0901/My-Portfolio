@@ -28,7 +28,7 @@ export default function Home() {
             Welcome <span className="font-semibold"> to my creative realm{","}</span><br className="hidden font-bold lg:block" /> Technology Stack <span className="font-semibold underline decoration-primary"><span ref={el} /></span>
           </h1>
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
-          Where passion meets innovation{"."} <br className="hidden lg:block" /> Learn about me, my blogs, and projects here.
+          Where passion meets innovation{"."} <br className="hidden lg:block" /> Learn about me, my achivement, and projects here.
           </p>
           <div className="mt-6 bg-transparent border rounded-lg dark:border-gray-700 lg:w-2/3 focus-within:border-primary focus-within:ring focus-within:ring-primary dark:focus-within:border-primary focus-within:ring-opacity-20">
             <form action="https://www.creative-tim.com/twcomponents/search" className="flex flex-wrap justify-between md:flex-row">
